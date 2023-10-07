@@ -36,7 +36,7 @@ def api_square():
     if 'nr' in flask.request.args:
         nr = float(flask.request.args['nr'])
         sq = nr * nr
-        return f"{sq:.2f}"
+        return f"<h1>Square</h1><p>The square of {nr} is {sq:.2f} (with two decimals)</p>"
 
     else:
         return "Square what?"                   
